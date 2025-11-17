@@ -9,7 +9,7 @@ app = FastAPI()
 # ================== CONFIGURACIÓN BLOCKCHAIN ==================
 
 # Conexión a Sepolia vía Alchemy
-RPC_URL = "https://eth-sepolia.g.alchemy.com/v2/dSfxKDUR1T06yEdb3pPDzA94HzMYgs_e"
+RPC_URL = "https://eth-sepolia.g.alchemy.com/v2/g6vT7CzmWiPIcLmMf9gz5"
 
 # Dirección del contrato
 CONTRACT_ADDRESS = Web3.to_checksum_address(
@@ -19,7 +19,7 @@ CONTRACT_ADDRESS = Web3.to_checksum_address(
 # Private key de PRUEBA (la que autorizaste usar aquí).
 PRIVATE_KEY = os.environ.get(
     "PRIVATE_KEY",
-    "0x3a2a62a60b73ab3568670f459cf50aae33de80de95aeae495a4098981a3716da"
+    "96d0a9ef327798bcdf7b38ef878cce24c384942e3f3a3b86bc77fec2c8e68364"
 )
 
 CHAIN_ID = 11155111  # Sepolia
@@ -44,7 +44,7 @@ ABI_JSON = [
 # ================== CONFIGURACIÓN PINATA ==================
 
 PINATA_JWT = (
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiIwNTAyNDQ5ZS04NWE2LTRkYTItYjQyNC1iZmY4NDY4OTZjYWQiLCJlbWFpbCI6InlhaXJyQHVuaW5vcnRlLmVkdS5jbyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6IkZSQTEifSx7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6Ik5ZQzEifV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiIyZjlhMmE0MmQwYzU1MGE2YTJhOCIsInNjb3BlZEtleVNlY3JldCI6IjhjZjIyNmZmMGJlM2U3Njg3Yjc1YzFlZTFlNGQ3Y2JjN2RhZGM5YTcwMDg0YTkxNGVlYmQ5OWFiYWFhMDVmMzYiLCJleHAiOjE3ODIyNjM0MzV9.2koLJu6_PJQzsTlQMxtASDR5xBoGFvQU9HRE4sfKRFQ"
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI3MDIyNzUwMC1iMWQyLTRiZTItYjg1ZC01N2ZhZmU2MWFjZDMiLCJlbWFpbCI6Im1pZ3VlbGFuZ2VsYms2N0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGluX3BvbGljeSI6eyJyZWdpb25zIjpbeyJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MSwiaWQiOiJGUkExIn0seyJkZXNpcmVkUmVwbGljYXRpb25Db3VudCI6MSwiaWQiOiJOWUMxIn1dLCJ2ZXJzaW9uIjoxfSwibWZhX2VuYWJsZWQiOmZhbHNlLCJzdGF0dXMiOiJBQ1RJVkUifSwiYXV0aGVudGljYXRpb25UeXBlIjoic2NvcGVkS2V5Iiwic2NvcGVkS2V5S2V5IjoiNDg5MmQzYmNlN2YxZTU5M2ViYzAiLCJzY29wZWRLZXlTZWNyZXQiOiIyOWZjNTg2NWMzY2U2OTg0NDJhZGU5NzU1ZGM0NTFmM2RkYjczYjBiYzIxYWM5YjM1NWUyMTg2OGQwYjJlMDQyIiwiZXhwIjoxNzk0OTU4NjM1fQ.hhdqEoFo9bfKh-4wgwMrnH-87-Ag7dkJriOn8b3l0qw"
 )
 
 PINATA_URL = "https://api.pinata.cloud/pinning/pinJSONToIPFS"
