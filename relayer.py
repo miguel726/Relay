@@ -155,3 +155,6 @@ async def recibir_lectura(req: Request):
         "block": receipt.blockNumber,
         "cid": cid,
     }
+    @app.get("/api/lecturas")
+    def obtener_lecturas():
+        return lecturas_local
